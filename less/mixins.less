@@ -1,1 +1,26 @@
 // Mixins Here
+@phone: ~'(max-width: 500px)';
+
+@backgroundRed: red;
+@backgroundPurple: purple;
+
+
+// Button
+.btn-mixin(@clear, @fnts, @txt) {
+    text-align: center;
+    padding: 1.0rem 0.5rem;
+    border-radius: 0.6rem;
+    background-color: @clear;
+    font-size: @fnts;
+    color: @txt;
+}
+
+.redText {
+    color: @backgroundRed;
+
+}
+
+.purpleText {
+    color: @backgroundPurple;
+
+}
